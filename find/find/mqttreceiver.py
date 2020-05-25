@@ -1,6 +1,6 @@
 #-*- coding: utf-8 -*-
 import sys
-if sys.argv[1] is not None:
+if len(sys.argv)>1 and sys.argv[1] is not None:
     sys.path.append(sys.argv[1])
 
 import paho.mqtt.client as mqtt
